@@ -29,6 +29,10 @@ body{
     background-color:black;
     color:white;
 }
+#gridrow{
+    display:grid;
+    grid-template-rows:1fr 2fr;
+}
 @media(max-width:800px){
     #grid{
         display:block;
