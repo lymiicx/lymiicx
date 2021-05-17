@@ -3,16 +3,59 @@
     <head>
         <title>Lymiicx Kitchen</title>
         <meta charset="utf-8">
+        <style>
+            a {
+                text-decoration:none;
+                color:yellow;
+            }
+            h1 {
+                font-size:45px;
+                text-align:center;
+                border-bottom:1px solid blue;
+                margin:0;
+                padding:20px
+            }
+            #grid{
+                display:grid;
+                grid-template-columns:200px 1fr;
+            }
+            ol{
+                border-right:1px solid blue;
+                width:100px;
+                margin:0;
+                padding:20px;
+            }
+            #grid ol{
+                padding-left:33px;
+            }
+            #grid #article{
+                padding-left:25px;
+            }
+            body{
+                background-color:black;
+                color:white;
+            }
+        </style>
     </head>
     <body>
         <h1><a href="index.html">LymiicX Division2</a></h1>
-        <ol>
-            <li><a href="dc62.html">DC-62</a></li>
-            <li><a href="skill.html">Skill</a></li>
-            <li><a href="darkzon.html">DarkZone</a></li>
-        </ol>
-        <h2>DC-62</h2>
-        <div align="center"><img src="division2.jpg" width=80% ></div>
-        <p>톰 클랜시의 디비전 2에서 등장하는 독극물. 노란색의 분말 형태이다. 그린 플루의 항바이러스 작용제 용도로서 연구 및 개발된 물건. 그린 플루의 소독에 효과가 있어 널리 사용되었으나 저온 환경에서 인체에 '치명적인 위해'를 가하는 독소로 뒤바뀐다는 최악의 문제점이 발견되었고 겨울에 발생한 그린 플루 사태를 더욱 악화시키고 만다.<br>원래 안전성이 확실하게 검증되지 않아 대통령 보좌관 등은 DC-62의 사용을 주저했으나 JTF측에서 바이러스에 효과가 있다면 즉각 사용해야 한다며 밀어붙인 탓.<br>DC-62의 위해성이 발견된 직후 과학자들은 모든 수단을 동원하여 변이된 독소를 제거하려 했으나 모든 종류의 소독제를 동원했음에도 실패.</p>
+        <div id="grid">
+            
+                <ol>
+                    <li><a href="dc62.html">DC-62</a></li>
+                    <li><a href="skill.html">Skill</a></li>
+                    <li><a href="darkzone.html">DarkZone</a></li>
+                </ol>                
+            
+            <div id="article">
+                <h2>Profile</h2>
+                <p><img src="profile.png" width=120px height=120px align="left" style="display:inline;margin-right:20px"> <li>Hello : 하다보니 html과 CSS를 죽어라 공부하고 있음</li>
+                    <li>Twitter : @lymiicx</li>
+                    <li>E-mail : lymiicx@gmail.com</li>
+                    <li>Wish : PlayStation5</li>                
+                </p>
+            </div>
+        </div>
+        
     </body>
 </html>
