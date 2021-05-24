@@ -1,0 +1,59 @@
+/* 기본배경세팅 */
+body {
+    background-color:pink;
+    color:blue;
+}
+a, ol {
+    color:red;
+    text-decoration: none;
+}
+h1 {
+    font-size:45px;
+    text-align:center;
+    border-bottom:2px solid black;
+    margin:0;
+    padding:20px;
+}
+h2 {
+    margin:0;
+    padding:0;
+    font-size:30px;
+}
+table {
+    width:100%;
+    height:150px;
+    border:2px solid black;
+    border-collapse:collapse;
+}
+th, td {
+    border:2px solid black;
+    text-align:center;
+}
+/* 박스모델 적용 */
+#grid {
+    display:grid;
+    grid-template-columns:150px 1fr;
+}
+#grid ol{
+    font-size:20px;
+    margin:0;
+    padding-top:40px;
+    border-right:2px solid black;
+}
+#grid div{
+    margin : 0;
+    padding : 20px;
+}
+@media(max-width:600px){
+    #grid{
+        display:block;
+    }
+    #grid ol{
+        border-top:2px solid black;
+        border-bottom:2px solid black;
+        border-right:none;
+    }
+    h1{
+        border-bottom:none;
+    }
+}
